@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="@dimen/dimen_2dp"
+    app:cardCornerRadius="@dimen/dimen_6dp"
+    android:layout_marginVertical="@dimen/dimen_4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llBatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:clipToPadding="false">
+
+
+        <TextView
+            android:id="@+id/textTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            tool:text="Batch Name"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textCreatedBy"
+            app:layout_constraintBottom_toBottomOf="@id/textCreatedBy"
+            app:layout_constraintTop_toBottomOf="@id/textCreatedBy"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            tool:text="Revewed"
+            android:textColor="#4CAF50"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:textSize="@dimen/dimen_14sp" />
+
+
+        <TextView
+            android:id="@+id/textCreatedAt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTitle"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tool:text="Dibuat Pada : "
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/color_primary" />
+
+        <TextView
+            android:id="@+id/textCreatedBy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textCreatedAt"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tool:text="Dibuat Oleh : "
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/color_primary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
