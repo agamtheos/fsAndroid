@@ -193,7 +193,7 @@ public class ChartActivity extends AppCompatActivity {
 
         // Define the data
         PieData data = new PieData(dataSet);
-        data.setDrawValues(false);
+        data.setDrawValues(true);
 
         // Increase the text size of values
         data.setValueTextSize(16f);
